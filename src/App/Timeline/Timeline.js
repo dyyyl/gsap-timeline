@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { TimelineLite } from 'gsap';
 
+import lift from '../../shared/images/gsap-lift.png';
 import { babel } from '../../shared/svg/babel.svg';
 import { github } from '../../shared/svg/github.svg';
 import { js } from '../../shared/svg/js.svg';
@@ -52,7 +53,7 @@ const TimelineSequence = () => {
         <h2 ref={h2 => (subhead = h2)}>A real swell guy, you should buy this man a beer</h2>
         <div>
           <Feature
-            src="https://www.greensock.com/_img/codepen/feature_robust.png"
+            src={lift}
             width="240"
             height="151"
             ref={img => (feature = img)}
